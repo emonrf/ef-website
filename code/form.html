@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fill Your Info</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        input {
+            margin: 10px;
+            padding: 5px;
+        }
+        button {
+            font-size: 20px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <form id="userForm">
+        <label>Name: <input type="text" id="name"></label><br>
+        <label>Date of Birth: <input type="date" id="dob"></label><br>
+        <label>Gender: <input type="text" id="gender"></label><br>
+        <button type="button" onclick="submitForm()">Submit</button>
+    </form>
+    <script>
+        function submitForm() {
+            const name = document.getElementById('name').value;
+            localStorage.setItem('userName', name);
+            window.location.href = 'welcome.html';
+        }
+    </script>
+</body>
+</html>

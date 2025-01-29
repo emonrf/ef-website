@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What We Eating, Primu?</title>
+    <style>
+        body {
+            background-color: rgb(251, 206, 206);
+            color: rgb(122, 30, 30);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .food-option {
+            margin: 20px;
+            cursor: pointer;
+        }
+        img {
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>What we eating, Primu?</h1>
+    <div class="food-options">
+        <div class="food-option" onclick="goToDesserts('pizza')">
+            <img src="/images/pizza.jpg" alt="Pizza">
+            <p>Pizza</p>
+        </div>
+        <div class="food-option" onclick="goToDesserts('burger')">
+            <img src="/images/burger.jpg" alt="Burger">
+            <p>Burger</p>
+        </div>
+        <div class="food-option" onclick="goToDesserts('sushi')">
+            <img src="/images/sushi.jpg" alt="Sushi">
+            <p>Sushi</p>
+        </div>
+        <div class="food-option" onclick="goToDesserts('pasta')">
+            <img src="/images/pasta.jpg" alt="Pasta">
+            <p>Pasta</p>
+        </div>
+        <div class="food-option" onclick="goToDesserts('burger')">
+        <img src="/images/other.jpg" alt="Burger">
+        <p>Other?(Buffet?? maybe)</p>
+    </div>
+
+    <script>
+        function goToDesserts(food) {
+            window.location.href = 'dessert.html'; // Redirect to dessert page
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="welcomeText"></h1>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const name = localStorage.getItem('userName') || "stranger";
+            document.getElementById('welcomeText').innerText = `Oh, it's you <3`;
+
+            // Check if the name is "Erin Frink"
+            if (name === "Erin Frink") {
+                setTimeout(() => {
+                    window.location.href = 'valentine.html';
+                }, 2000);
+            }
+            else
+            {
+                setTimeout(() => {
+                    window.location.href = 'front.html';
+                }, 0);
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be My Valentine</title>
+    <style>
+        body {
+            background-color: pink;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        button {
+            background-color: white;
+            color: pink;
+            border: 2px solid pink;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 10px;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: pink;
+            color: white;
+        }
+        img {
+            width: 200px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" alt="Cat GIF">
+    <h1>Will you be my Valentine?</h1>
+
+    <script>
+        document.getElementById("yesButton").addEventListener("click", function() {
+            alert("noice");
+        });
+
+        document.getElementById("yesButton2").addEventListener("click", function() {
+            alert("double noice");
+        });
+
+    </script>
+     <button onclick="location.href='food.html'">Yes</button>
+     <button onclick="location.href='food.html'">Double yes</button>
+
+</body>
+</html>
